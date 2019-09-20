@@ -19,7 +19,7 @@ import org.eclipse.microprofile.jwt.JsonWebToken;
 
 /**
  * Version 1 of the TokenSecuredResource
- */
+ **/
 @Path("/secured")
 @RequestScoped
 public class TokenSecuredResource {
@@ -56,5 +56,4 @@ public class TokenSecuredResource {
         String helloReply = String.format("hello + %s, isSecure: %s, authScheme: %s, hasJWT: %s, groups: %s\"", name, ctx.isSecure(), ctx.getAuthenticationScheme(), hasJWT, groupsString);
         return helloReply;
     }
-    
 }
