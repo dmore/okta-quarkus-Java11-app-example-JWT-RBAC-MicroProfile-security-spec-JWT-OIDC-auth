@@ -8,9 +8,7 @@ import java.util.Objects;
 public class Kayak {
 
     private String make;
-
     private String model;
-
     private Integer length;
 
     public Kayak() {
@@ -21,5 +19,5 @@ public class Kayak {
         this.model = model;
         this.length = length;
     }
-    
+
 }
