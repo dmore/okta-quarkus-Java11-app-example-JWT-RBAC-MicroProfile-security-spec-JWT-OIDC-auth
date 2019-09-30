@@ -18,8 +18,7 @@ import org.eclipse.microprofile.jwt.Claim;
 import org.eclipse.microprofile.jwt.JsonWebToken;
 
 /**
- * Version 1 of the TokenSecuredResource
- **/
+ * Version 1 of the TokenSecuredResource */
 @Path("/secured")
 @RequestScoped
 public class TokenSecuredResource {
