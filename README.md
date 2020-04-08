@@ -1,6 +1,6 @@
 # Quarkus Example with Java and OIDC Authentication
 
-A Quarkus example app that shows how to developer REST endpoints and secure them with MicroProfile JWT and OIDC.
+A Quarkus example app that shows how to develop REST endpoints and secure them with MicroProfile JWT and OIDC.
 
 Please read [How to Develop a Quarkus App with Java and OIDC Authentication](http://developer.okta.com/blog/2019/09/30/java-quarkus-oidc) to see how this app was created.
 
