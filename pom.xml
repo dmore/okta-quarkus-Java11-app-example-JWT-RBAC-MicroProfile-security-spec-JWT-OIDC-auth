@@ -6,10 +6,10 @@
   <artifactId>oauthdemo</artifactId>
   <version>1.0-SNAPSHOT</version>
   <properties>
-    <surefire-plugin.version>2.22.0</surefire-plugin.version>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <quarkus.version>0.23.1</quarkus.version>
+    <surefire-plugin.version>2.22.2</surefire-plugin.version>
+    <maven.compiler.target>11</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <quarkus.version>1.11.1.Final</quarkus.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
@@ -50,8 +50,13 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.18.8</version>
+      <version>1.18.16</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.quarkus</groupId>
+      <artifactId>quarkus-test-security</artifactId>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   <build>
