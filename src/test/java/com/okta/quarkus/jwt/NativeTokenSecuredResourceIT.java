@@ -1,8 +1,8 @@
 package com.okta.quarkus.jwt;
 
-import io.quarkus.test.junit.SubstrateTest;
+import io.quarkus.test.junit.NativeImageTest;
 
-@SubstrateTest
+@NativeImageTest
 public class NativeTokenSecuredResourceIT extends TokenSecuredResourceTest {
 
     // Execute the same tests but in native mode.

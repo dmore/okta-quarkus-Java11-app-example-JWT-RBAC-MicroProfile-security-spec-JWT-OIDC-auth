@@ -28,7 +28,7 @@ public class TokenSecuredResource {
 
     @Inject
     @Claim("groups")
-    private Set<String> groups;
+    Set<String> groups;
 
     @GET()
     @Path("permit-all")
@@ -52,7 +52,7 @@ public class TokenSecuredResource {
         String name = caller == null ? "anonymous" : caller.getName();
         boolean hasJWT = jwt != null;
         String groupsString = groups != null ? groups.toString() : "";
-        String helloReply = String.format("hello + %s, isSecure: %s, authScheme: %s, hasJWT: %s, groups: %s\"", name, ctx.isSecure(), ctx.getAuthenticationScheme(), hasJWT, groupsString);
+        String helloReply = String.format("hello + %s, isSecure: %s, authScheme: %s, hasJWT: %s, groups: %s", name, ctx.isSecure(), ctx.getAuthenticationScheme(), hasJWT, groupsString);
         return helloReply;
     }
 }
