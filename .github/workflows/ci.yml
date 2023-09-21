@@ -39,7 +39,17 @@ jobs:
         run: mvn --batch-mode --update-snapshots package
 
       # To run the example compile quarkus:dev
-      - name: Test Dev Run 
+      # Launches fine, need to terminate it after a few minutes. will try to get the docker/jre testing setup later.
+      # [INFO] --- quarkus-maven-plugin:1.11.1.Final:dev (default-cli) @ oauthdemo ---
+      # Listening for transport dt_socket at address: 5005
+      #__  ____  __  _____   ___  __ ____  ______ 
+      # --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+      # -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+      #--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+      #2023-09-21 10:59:32,775 INFO  [io.quarkus] (Quarkus Main Thread) oauthdemo 1.0-SNAPSHOT on JVM (powered by Quarkus 1.11.1.Final) started in 2.304s. Listening on: http://localhost:8080
+      #2023-09-21 10:59:32,777 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+      #2023-09-21 10:59:32,777 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, mutiny, resteasy, resteasy-jsonb, security, smallrye-context-propagation, smallrye-jwt, vertx, vertx-web]
+      #- name: Test Dev Run 
         #run: mvn compile quarkus:dev
         # use the wrapper instead
-        run: ./mvnw compile quarkus:dev
+      #  run: ./mvnw compile quarkus:dev
