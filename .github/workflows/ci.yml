@@ -29,9 +29,11 @@ jobs:
       #testing: adding a verify step
       - name: Verify with mvn 
         run: mvn --batch-mode verify
+
       #testing: adding an install step
       - name: maven install 
         run: mvn --batch-mode install 
+        
       # The "Build with Maven" step runs the Maven `package` target in non-interactive mode to ensure that your code builds, tests pass, and a package can be created.
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots package
