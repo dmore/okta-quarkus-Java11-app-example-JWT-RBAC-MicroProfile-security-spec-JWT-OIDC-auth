@@ -40,4 +40,6 @@ jobs:
 
       # To run the example compile quarkus:dev
       - name: Test Dev Run 
-        run: mvn compile quarkus:dev
+        #run: mvn compile quarkus:dev
+        # use the wrapper instead
+        run: ./mvnw compile quarkus:dev
