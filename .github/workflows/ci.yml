@@ -27,13 +27,17 @@ jobs:
           distribution: 'temurin'
 
       #testing: adding a verify step
-      - name: Verify with mvn 
+      - name: Verify with mvn and tests 
         run: mvn --batch-mode verify
 
       #testing: adding an install step
-      - name: maven install 
+      - name: maven install and tests
         run: mvn --batch-mode install 
-        
+
       # The "Build with Maven" step runs the Maven `package` target in non-interactive mode to ensure that your code builds, tests pass, and a package can be created.
-      - name: Build with Maven
+      - name: Build with Maven and tests 
         run: mvn --batch-mode --update-snapshots package
+
+      # To run the example compile quarkus:dev
+      - name: Test Dev Run 
+        run: mvn compile quarkus:dev
